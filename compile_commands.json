@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/tracyb/workspaces/gamecpp/build",
+  "command": "/usr/bin/c++   -I../include -isystem /usr/include/SDL2    -o CMakeFiles/gamecpp.dir/src/main.cpp.o -c /home/tracyb/workspaces/gamecpp/src/main.cpp",
+  "file": "/home/tracyb/workspaces/gamecpp/src/main.cpp"
+},
+
+{
+  "directory": "/home/tracyb/workspaces/gamecpp/build",
+  "command": "/usr/bin/c++   -I../include -isystem /usr/include/SDL2    -o CMakeFiles/gamecpp.dir/src/Game.cpp.o -c /home/tracyb/workspaces/gamecpp/src/Game.cpp",
+  "file": "/home/tracyb/workspaces/gamecpp/src/Game.cpp"
+}
+]
