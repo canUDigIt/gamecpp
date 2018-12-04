@@ -2,4 +2,6 @@ build/
 debug/
 release/
 
+.vscode/
+
 tags
