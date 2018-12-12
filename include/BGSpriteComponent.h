@@ -1,5 +1,4 @@
-#ifndef BGSPRITECOMPONENT_H
-#define BGSPRITECOMPONENT_H
+#pragma once
 
 #include <SpriteComponent.h>
 
@@ -28,5 +27,3 @@ private:
   Vector2 m_ScreenSize;
   float m_ScrollSpeed = 0.f;
 };
-
-#endif

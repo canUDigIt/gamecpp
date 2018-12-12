@@ -1,5 +1,4 @@
-#ifndef SPRITECOMPONENT_H
-#define SPRITECOMPONENT_H
+#pragma once
 
 #include <Component.h>
 
@@ -21,5 +20,3 @@ protected:
     int m_TexWidth = 0;
     int m_TexHeight = 0;
 };
-
-#endif

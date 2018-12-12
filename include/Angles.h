@@ -1,5 +1,4 @@
-#ifndef ANGLES_H
-#define ANGLES_H
+#pragma once
 
 #include <cmath>
 
@@ -16,5 +15,3 @@ struct Degrees {
 
   float ToRadians() const { return value * (pi / 180.f); }
 };
-
-#endif

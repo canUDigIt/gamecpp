@@ -1,5 +1,4 @@
-#ifndef ACTOR_H
-#define ACTOR_H
+#pragma once
 
 #include <Vector2.h>
 #include <Angles.h>
@@ -57,5 +56,3 @@ private:
     std::vector<class Component*> m_Components;
     class Game* m_pGame = nullptr;
 };
-
-#endif

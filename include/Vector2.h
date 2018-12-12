@@ -1,9 +1,6 @@
-#ifndef VECTOR2_H
-#define VECTOR2_H
+#pragma once
 
 struct Vector2 {
   float x = 0.f;
   float y = 0.f;
 };
-
-#endif

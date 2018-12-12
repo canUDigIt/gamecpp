@@ -1,5 +1,4 @@
-#ifndef COMPONENT_H
-#define COMPONENT_H
+#pragma once
 
 class Component
 {
@@ -14,5 +13,3 @@ protected:
     class Actor* m_Owner;
     int m_UpdateOrder;
 };
-
-#endif

@@ -1,5 +1,4 @@
-#ifndef GAME_H
-#define GAME_H
+#pragma once
 
 #include <vector>
 #include <string>
@@ -46,5 +45,3 @@ private:
 
   std::map<std::string, SDL_Texture*> m_Textures;
 };
-
-#endif
