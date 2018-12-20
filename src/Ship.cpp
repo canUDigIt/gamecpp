@@ -1,7 +1,7 @@
-#include <Ship.h>
+#include "Ship.h"
 
-#include <AnimSpriteComponent.h>
-#include <Game.h>
+#include "AnimSpriteComponent.h"
+#include "Game.h"
 
 Ship::Ship(Game *pGame) : Actor(pGame) {
   AnimSpriteComponent *pAsc = new AnimSpriteComponent(this);

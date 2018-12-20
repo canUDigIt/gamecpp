@@ -1,7 +1,7 @@
-#include <Actor.h>
+#include "Actor.h"
 
-#include <Component.h>
-#include <Game.h>
+#include "Component.h"
+#include "Game.h"
 
 #include <algorithm>
 #include <functional>

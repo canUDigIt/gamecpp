@@ -1,4 +1,4 @@
-#include <AnimSpriteComponent.h>
+#include "AnimSpriteComponent.h"
 
 AnimSpriteComponent::AnimSpriteComponent(Actor *pOwner, int drawOrder)
     : SpriteComponent(pOwner, drawOrder) {}

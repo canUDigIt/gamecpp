@@ -1,6 +1,6 @@
-#include <BGSpriteComponent.h>
+#include "BGSpriteComponent.h"
 
-#include <Actor.h>
+#include "Actor.h"
 #include <SDL.h>
 
 BGSpriteComponent::BGSpriteComponent(Actor *pOwner, int drawOrder)

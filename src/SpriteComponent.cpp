@@ -1,7 +1,7 @@
-#include <SpriteComponent.h>
+#include "SpriteComponent.h"
 
-#include <Actor.h>
-#include <Game.h>
+#include "Actor.h"
+#include "Game.h"
 #include <SDL.h>
 
 SpriteComponent::SpriteComponent(Actor *pOwner, int drawOrder)

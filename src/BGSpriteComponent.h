@@ -1,8 +1,8 @@
 #pragma once
 
-#include <SpriteComponent.h>
+#include "SpriteComponent.h"
 
-#include <Vector2.h>
+#include "Vector2.h"
 
 #include <vector>
 

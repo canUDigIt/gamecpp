@@ -1,10 +1,10 @@
-#include <Game.h>
+#include "Game.h"
 
 #include <SDL.h>
 #include <SDL_image.h>
 
-#include <BGSpriteComponent.h>
-#include <Ship.h>
+#include "BGSpriteComponent.h"
+#include "Ship.h"
 
 #include <algorithm>
 
