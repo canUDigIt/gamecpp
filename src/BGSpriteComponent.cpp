@@ -35,6 +35,7 @@ void BGSpriteComponent::SetBGTextures(const std::vector<SDL_Texture *> &textures
     BGTexture temp;
     temp.m_Offset.x = count * m_ScreenSize.x;
     temp.m_Offset.y = 0;
+    temp.m_pTexture = tex;
     m_BGTextures.emplace_back(temp);
     count++;
   }

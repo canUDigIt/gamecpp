@@ -20,7 +20,7 @@ public:
 
 private:
   struct BGTexture {
-    SDL_Texture *m_pTexture;
+    SDL_Texture *m_pTexture = nullptr;
     Vector2 m_Offset;
   };
   std::vector<BGTexture> m_BGTextures;
