@@ -4,8 +4,9 @@ project(gamecpp)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(SDL2 REQUIRED)
-include(FindPkgConfig)
-pkg_search_module(SDL2_Image REQUIRED SDL2_image>=2.0.0)
+
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(SDL2_Image REQUIRED sdl2_image)
 
 add_executable(gamecpp
     src/main.cpp
@@ -22,15 +23,17 @@ add_executable(gamecpp
 target_include_directories(gamecpp
     PRIVATE
         include/
+        ${SDL2_INCLUDE_DIRS}
         ${SDL2_Image_INCLUDE_DIRS}
 )
 
 target_link_libraries(gamecpp
     PRIVATE
-        SDL2::SDL2
-        SDL2::SDL2main
-        ${SDL2_Image_LIBRARIES}
+        ${SDL2_LIBRARIES}
+        ${SDL2_Image_LINK_LIBRARIES}
 )
+
+target_compile_features(gamecpp PUBLIC cxx_std_17)
 
 add_custom_command(
     TARGET gamecpp

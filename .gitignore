@@ -3,5 +3,7 @@ debug/
 release/
 
 .vscode/
+.clangd/
+.ccls*/
 
 tags
