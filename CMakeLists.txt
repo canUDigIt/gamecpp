@@ -6,7 +6,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 find_package(SDL2 REQUIRED)
 
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(SDL2_Image REQUIRED sdl2_image)
+pkg_check_modules(SDL2_Image REQUIRED SDL2_image)
 
 add_executable(gamecpp
     src/main.cpp
