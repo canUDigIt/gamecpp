@@ -15,7 +15,7 @@ BGSpriteComponent::BGSpriteComponent(Actor *pOwner, int drawOrder)
 void BGSpriteComponent::Update(float deltaTime) {
   SpriteComponent::Update(deltaTime);
 
-  float minX = -(m_BGTextures.size() - 1) * m_ScreenSize.x;
+  float minX = m_ScreenSize.x - (m_BGTextures.size() * m_ScreenSize.x);
   float maxX = m_ScreenSize.x;
 
   for (auto &bg : m_BGTextures) {
@@ -38,7 +38,7 @@ void BGSpriteComponent::Draw(SDL_Renderer *pRenderer) {
 }
 
 void BGSpriteComponent::SetBGTextures(const std::vector<SDL_Texture *> &textures) {
-  float minX = -(textures.size() - 1) * m_ScreenSize.x;
+  float minX = m_ScreenSize.x - (textures.size() * m_ScreenSize.x);
   float maxX = m_ScreenSize.x;
   for (int count = 0; count < textures.size(); ++count) {
     BGTexture temp;
