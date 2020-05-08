@@ -7,3 +7,4 @@ release/
 .ccls*/
 
 tags
+compile_commands.json
